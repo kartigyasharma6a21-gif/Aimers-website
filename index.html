@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aimers - UPSC Personal Mentorship and Free Resources</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for uniqueness */
+        .hero-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-attachment: fixed;
+            position: relative;
+        }
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5689da37-c47b-4a7a-9cc5-23cf586eabfc.png');
+            background-size: cover;
+            opacity: 0.1;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Google Ad placeholder styles */
+        .ad-placeholder {
+            background: #f0f0f0;
+            border: 1px dashed #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-900 bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-indigo-600"><img class="inline-block w-10 h-10 mr-2" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/284a6560-8b5f-4b9b-a68b-5e0912bb80c2.png" alt="Spherical icon representing UPSC preparation with a stack of books and a gavel in golden tones">Aimers</h1>
+            <nav class="space-x-6 hidden md:flex">
+                <a href="#home" class="text-gray-700 hover:text-indigo-600 transition">Home</a>
+                <a href="#free" class="text-gray-700 hover:text-indigo-600 transition">Free Daily Material</a>
+                <a href="#courses" class="text-gray-700 hover:text-indigo-600 transition">Courses</a>
+                <a href="#mentorship" class="text-gray-700 hover:text-indigo-600 transition">Mentorship</a>
+                <a href="#about" class="text-gray-700 hover:text-indigo-600 transition">About Me</a>
+            </nav>
+            <button id="mobile-menu-toggle" class="md:hidden text-indigo-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-md px-4 py-2">
+            <a href="#home" class="block py-2 text-gray-700">Home</a>
+            <a href="#free" class="block py-2 text-gray-700">Free Daily Material</a>
+            <a href="#courses" class="block py-2 text-gray-700">Courses</a>
+            <a href="#mentorship" class="block py-2 text-gray-700">Mentorship</a>
+            <a href="#about" class="block py-2 text-gray-700">About Me</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20 relative">
+        <div class="container mx-auto px-4 text-center animate-fade-in">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-4">Master UPSC with Personalized Guidance</h2>
+            <p class="text-lg md:text-xl mb-8">Join Aim ers Academy for expert-led mentorship, paid courses, and daily free resources tailored to your UPSC journey.</p>
+            <a href="#courses" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- Google Ad Placeholder -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="ad-placeholder h-32">Google AdSense Banner - Integrate Ad Code Here</div>
+        <p class="text-sm text-gray-600 mt-2">Note: To integrate Google Ads, sign up for AdSense at adsense.google.com, get your ad code, and replace this placeholder with the actual script. Ensure compliance with Google policies for responsive banners.</p>
+    </div>
+
+    <!-- Free Daily Material Section -->
+    <section id="free" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-indigo-600 mb-8">Free Daily Materials</h3>
+            <p class="text-center text-gray-700 mb-8">Upload and access fresh study materials, notes, quizzes, and current affairs summaries every day. Personalized selections based on your progress.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-100 p-6 rounded-lg card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/690e17d2-e728-45d8-91f5-326b45e6b3e6.png" alt="Handwritten notes on Indian polity with highlighted key points, pen beside them on a wooden desk in natural light">
+                    <h4 class="text-xl font-semibold mb-2">Polity Notes - Day 1</h4>
+                    <p>Comprehensive notes on constitutional amendments with real-world examples.</p>
+                    <a href="#" class="text-indigo-600 mt-4 inline-block">Download Free</a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/03f0e13e-e2d6-4878-a189-5b8a70820766.png" alt="Laptop screen displaying a quiz interface with multiple-choice questions on global affairs, coffee mug nearby">
+                    <h4 class="text-xl font-semibold mb-2">Current Affairs Quiz</h4>
+                    <p>Interactive quiz on recent political developments.</p>
+                    <a href="#" class="text-indigo-600 mt-4 inline-block">Take Quiz</a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0391d09e-a7a2-4f97-8078-80f5f97148cb.png" alt="World map with annotated regions for geography unplugged, pins marking important locations in vibrant colors">
+                    <h4 class="text-xl font-semibold mb-2">Geography Infographic</h4>
+                    <p>Visual aids for understanding climate patterns and topography.</p>
+                    <a href="#" class="text-indigo-600 mt-4 inline-block">View Infographic</a>
+                </div>
+            </div>
+            <p class="text-center text-gray-600 mt-8">New uploads daily at 8 AM IST. Subscribe for notifications.</p>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-indigo-600 mb-8">Paid Courses</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Course 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6df7daca-4c6d-461d-8621-7b0cec1008f2.png" alt="Open book on ancient Indian history with illustrations of Maurya dynasty, quill pen, and historical artifacts on a parchment background">
+                    <h4 class="text-xl font-semibold mb-2">Ancient History Mastery</h4>
+                    <p>Personalized lectures with case studies. Includes recorded sessions and Q&A notes.</p>
+                    <ul class="text-sm mb-4">
+                        <li>- 30+ lectures by expert mentor</li>
+                        <li>- Custom study plans</li>
+                        <li>- Audio notes for revision</li>
+                        <li>- Lifetime access</li>
+                    </ul>
+                    <p class="font-bold text-green-600 mb-2">Price: ₹4999 | ₹399 after membership</p>
+                    <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">Enroll Now</a>
+                </div>
+                <!-- Course 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1391cb19-639c-418e-be5c-80063ca4488b.png" alt="Scales of justice balancing books on democracy and governance, surrounded by legal documents in a formal office setting">
+                    <h4 class="text-xl font-semibold mb-2">Polity Deep Dive</h4>
+                    <p>Focused on constitutional laws. One-on-one mentorship calls.</p>
+                    <ul class="text-sm mb-4">
+                        <li>- 25 personalized lectures</li>
+                        <li>- Mock tests included</li>
+                        <li>- Weekly live doubts clearing</li>
+                        <li>- PDF summaries</li>
+                    </ul>
+                    <p class="font-bold text-green-600 mb-2">Price: ₹5999 | ₹4999 for members</p>
+                    <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">Enroll Now</a>
+                </div>
+                <!-- Course 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c85bfba7-e3d4-4a54-97f1-4cd2fc93a305.png" alt="Graph charts rising with economic indicators, calculator, and global trade symbols on a sleek desk with city view">
+                    <h4 class="text-xl font-semibold mb-2">Economy Essentials</h4>
+                    <p>Master economics with real data analysis. Combo with current affairs.</p>
+                    <ul class="text-sm mb-4">
+                        <li>- 28 interactive sessions</li>
+                        <li>- Budget analysis modules</li>
+                        <li>- Expert feedback on answers</li>
+                        <li>- Access to study groups</li>
+                    </ul>
+                    <p class="font-bold text-green-600 mb-2">Price: ₹6999 | ₹5999 for prime members</p>
+                    <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">Enroll Now</a>
+                </div>
+            </div>
+            <p class="text-center text-gray-600 mt-8">All courses come with my personal guidance and daily progress tracking. Pay via UPI/Card for instant access.</p>
+        </div>
+    </section>
+
+    <!-- Mentorship Section -->
+    <section id="mentorship" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-indigo-600 mb-8">Personal Mentorship & Membership</h3>
+            <div class="md:flex items-center space-y-8 md:space-y-0 md:space-x-8">
+                <div class="md:w-1/2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/07a3607b-43ed-48b5-aca7-69f73ad5f5d4.png" alt="Mentor and student discussing notes intensely at a round table with laptops, in a cozy study room with plants and light bookshelves">
+                </div>
+                <div class="md:w-1/2">
+                    <p>Unlock lifetime memberships for exclusive 1:1 calls, strategy sessions, and priority access to resources. My mentorship is tailored to your strengths and weaknesses.</p>
+                    <ul class="mt-4 space-y-2">
+                        <li>- Weekly personalized video calls</li>
+                        <li>- Answer writing feedback</li>
+                        <li>- Motivation booster sessions</li>
+                        <li>- Premium member discounts on courses</li>
+                    </ul>
+                    <p class="font-bold text-green-600 mt-4">Membership: ₹1999/month or ₹19999/year</p>
+                    <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition mt-4 inline-block">Become a Member</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <img src="C:\Users\Kartigya\Downloads\upsc.webp" alt="UPSC"class="mx-auto mb-6 rounded-full">
+            <h3 class="text-3xl font-bold text-indigo-600 mb-4">About the Founder</h3>
+            <p class="text-lg max-w-2xl mx-auto">Hi, I'm the founder of Aimers Academy.I provide personalized guidance using my own curated notes and strategies. Your success is my mission!</p>
+            <div class="mt-6">
+                <a href="mailto:contact@aimersupsc.com" class="bg-indigo-600 text-white px-6 py-2 rounded mr-4">Email Me</a>
+                <a href="#" class="border border-indigo-600 text-indigo-600 px-6 py-2 rounded hover:bg-indigo-600 hover:text-white transition">Join WhatsApp Group</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2023 Aim ers Academy. All rights reserved. Mentored by Passion, Powered by Knowledge.</p>
+            <p class="mt-2">Follow for tips: Twitter | LinkedIn | Instagram</p>
+        </div>
+    </footer>
+
+    <!-- Simple JS for Mobile Menu -->
+    <script>
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
+
+<attempt_completion>
+To integrate Google Ads into this website:
+1. Sign up for Google AdSense at adsense.google.com (requires a verified website and content meeting their policies, like quality study materials).
+2. Once approved, get ad unit codes for banners, responsive units, or native ads.
+3. Replace the placeholder `<div class="ad-placeholder h-32">Google AdSense Banner - Integrate Ad Code Here</div>` with your actual AdSense script tag (e.g., `<script data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" data-ad-slot="xxxxxxxxxx" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>`).
+4. Place similar ads in other sections for monetization, ensuring they don't disrupt user experience (e.g., above free material).
+
+For deployment: Upload the HTML file to a server (e.g., GitHub Pages, Vercel, or a hosting provider). For dynamic features like uploading materials or handling payments, integrate backend services (e.g., Node.js with Express, or use platforms like WordPress for easier management).
+
+If you need more features like forms or updates, let me know! This design is fully responsive and optimized for an elegant user experience.
